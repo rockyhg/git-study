@@ -33,6 +33,9 @@
 - ステージングエリアに追加する
 	- Git Bash: `git add sample.md`
 	- VS Code: +ボタン
+- ステージングエリアにあるファイルやディレクトリを、 ローカルリポジトリにコミットする
+	- Git Bash: `git commit -m "Message"`
+	- VS Code: Commitボタン
 - コミットの履歴を表示する
 	- Git Bash: `git log`
 	- VS Code: Git Graphボタン
