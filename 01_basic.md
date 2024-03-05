@@ -14,7 +14,7 @@
 	- Git Graph
 	- Markdown All in One
 
-## 基本操作編
+## コマンド操作
 - ディレクトリ作成
   -  `markdown-template`
 - VS Codeで上記ディレクトリを開く
