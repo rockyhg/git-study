@@ -24,23 +24,24 @@ Gitリポジトリを作成したときに自動的に作成されるブラン�
 
 ## コマンド操作
 - 既存のブランチの一覧を表示する
-	- Git Bash: `git branch`
-	- このコマンドの出力では、 HEADがあるブランチの横に「`*`」マークがついている
+  - Git Bash: `git branch`
+  - このコマンドの出力では、 HEADがあるブランチの横に「`*`」マークがついている
 - ブランチを新規作成する
-	- Git Bash: `git branch new-feature`
+  - Git Bash: `git branch new-feature`
 - mainブランチから作成した「new-feature」ブランチに切り替える
-	- Git Bash: `git checkout new-feature`
+  - Git Bash: `git checkout new-feature`
 - 「bug-fix」というブランチを新規作成した上で、 masterブランチからこのブランチに切り替える
-	- Git Bash: `git checkout -b bug-fix`
-- 追加、修正を行う
+  - Git Bash: `git checkout -b bug-fix`
+- 追加、修正を行い、コミットする
+  - Git Bash: `git add sample.md` → `git commit -m "Message"`
+  - VS Code: +ボタン → Commitボタン
 - 「bug-fix」ブランチから「main」ブランチに切り替える
-	- Git Bash: `git checkout main`
+  - Git Bash: `git checkout main`
 - 今作業をしている「main」ブランチと、「bug-fix」ブランチをマージする
-	- Git Bash: `git merge bug-fix`
-	- 変更箇所が重複していない場合は、 「git merge」によって自動でマージが行われるが、 重複している場合はコンフリクトが発生する
-	- コンフリクトが発生したらワークツリーを手動で修正した上で「git add」と「git commit」を行う
+  - Git Bash: `git merge bug-fix`
+  - 変更箇所が重複していない場合は、 「git merge」によって自動でマージが行われるが、 重複している場合はコンフリクトが発生する
+  - コンフリクトが発生したらワークツリーを手動で修正した上で「git add」と「git commit」を行う
 - 「bug-fix」ブランチを削除する
-	- Git Bash: `git branch -d bug-fix`
-	- 最新コミットがマージされていないブランチを強制的に削除するには、 「-d」オプションの代わりに、「-D」オプションを付けて以下のように実行する
-	- Git Bash: `git branch -D new-feature`
-
+  - Git Bash: `git branch -d bug-fix`
+  - 最新コミットがマージされていないブランチを強制的に削除するには、 「-d」オプションの代わりに、「-D」オプションを付けて以下のように実行する
+  - Git Bash: `git branch -D new-feature`
