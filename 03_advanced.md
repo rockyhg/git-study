@@ -39,10 +39,17 @@ Gitリポジトリをインターネット上に配置できる、ホスティ�
 5. **【開発メンバー】** ローカルリポジトリの内容をリモートリポジトリに反映する
    - Git Bash: `git push origin new-feature`
 
-6. **【管理者】** GitHubで、ブランチの内容を確認し、OKならばマージする
+6. **【開発メンバー】** GitHubで、Pull Requestを作成する
+   - [Pull requests] > [New pull request]
+   - From branch: new-feature
+   - [Create pull request]
+   - タイトル、本文を入力 > [Create pull request]
 
-7. **【開発メンバー】** リモートリポジトリの内容をローカルリポジトリに反映する
-   - Git Bash: `git pull origin main`
+7. **【管理者】** GitHubで、Pull Requestの内容を確認し、OKならばマージする
+    - [Mearge pull request] > [Confirm mearge]
 
-8. **【開発メンバー】** 不要になったブランチを削除する
+8. **【開発メンバー】** リモートリポジトリの内容をローカルリポジトリに反映する
+   - Git Bash: `git checkout main` → `git pull origin main`
+
+9. **【開発メンバー】** 不要になったブランチを削除する
    - Git Bash: `git branch -d new-feature`
