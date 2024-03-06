@@ -53,3 +53,15 @@ Gitリポジトリをインターネット上に配置できる、ホスティ�
 
 9. **【開発メンバー】** 不要になったブランチを削除する
    - Git Bash: `git branch -d new-feature`
+
+## ワークフローの図
+
+![workflow1](./img/workflow1.png)
+
+![workflow2](./img/workflow2.png)
+
+![workflow3](./img/workflow3.png)
+
+![workflow4](./img/workflow4.png)
+
+![workflow5](./img/workflow5.png)
