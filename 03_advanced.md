@@ -55,13 +55,17 @@ Gitリポジトリをインターネット上に配置できる、ホスティ�
    - Git Bash: `git branch -d new-feature`
 
 ## ワークフローの図
-
+### ①～②
 ![workflow1](./img/workflow1.png)
 
+### ③～④
 ![workflow2](./img/workflow2.png)
 
+### ⑤～⑥
 ![workflow3](./img/workflow3.png)
 
+### ⑦
 ![workflow4](./img/workflow4.png)
 
+### ⑧
 ![workflow5](./img/workflow5.png)
