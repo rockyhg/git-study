@@ -29,6 +29,9 @@ Gitリポジトリをインターネット上に配置できる、ホスティ�
 2. **【開発メンバー】** リモートリポジトリをコピーして、ローカルリポジトリを作成する
    - Git Bash: `git clone https://github.com/<username>/git-practice.git`
 
+![workflow1](./img/workflow1.png)
+
+---
 3. **【開発メンバー】** ローカルリポジトリでブランチ「new-feature」を作成し、作成したブランチに切り替える
    - Git Bash: `git checkout -b new-feature`
 
@@ -36,6 +39,9 @@ Gitリポジトリをインターネット上に配置できる、ホスティ�
    - Git Bash: `git add sample.md` → `git commit -m "Message"`
    - VS Code: +ボタン → Commitボタン
 
+![workflow2](./img/workflow2.png)
+
+---
 5. **【開発メンバー】** ローカルリポジトリの内容をリモートリポジトリに反映する
    - Git Bash: `git push origin new-feature`
 
@@ -45,27 +51,21 @@ Gitリポジトリをインターネット上に配置できる、ホスティ�
    - [Create pull request]
    - タイトル、本文を入力 > [Create pull request]
 
+
+![workflow3](./img/workflow3.png)
+
+---
 7. **【管理者】** GitHubで、Pull Requestの内容を確認し、OKならばマージする
     - [Mearge pull request] > [Confirm mearge]
 
+![workflow4](./img/workflow4.png)
+
+---
 8. **【開発メンバー】** リモートリポジトリの内容をローカルリポジトリに反映する
    - Git Bash: `git checkout main` → `git pull origin main`
 
+![workflow5](./img/workflow5.png)
+
+---
 9. **【開発メンバー】** 不要になったブランチを削除する
    - Git Bash: `git branch -d new-feature`
-
-## ワークフローの図
-### ①～②
-![workflow1](./img/workflow1.png)
-
-### ③～④
-![workflow2](./img/workflow2.png)
-
-### ⑤～⑥
-![workflow3](./img/workflow3.png)
-
-### ⑦
-![workflow4](./img/workflow4.png)
-
-### ⑧
-![workflow5](./img/workflow5.png)
